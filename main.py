@@ -20,8 +20,12 @@ async def stream_markdown(filename: str):
         raise HTTPException(status_code=404, detail="File not found")
     
     def file_iterator():
-        with open(file_path, mode="rb") as file:
-            yield from file
+            with open(file_path, mode="r", encoding="utf-8") as file:
+                while True:
+                    char = file.read(1)
+                    if not char:
+                        break
+                    yield char.encode('utf-8')
     
     return StreamingResponse(file_iterator(), media_type="text/markdown")
 
