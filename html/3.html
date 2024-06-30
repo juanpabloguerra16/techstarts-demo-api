@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>CRM System Upgrade Progress Summary</title>
     <style>
@@ -9,9 +10,18 @@
             margin: 20px;
             line-height: 1.6;
         }
-        h1, h2, h3 {
+
+        h1,
+        h2,
+        h3 {
             color: #333;
         }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
         .section {
             margin-bottom: 20px;
             padding: 20px;
@@ -19,6 +29,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         .chip {
             display: inline-flex;
             align-items: center;
@@ -31,26 +42,45 @@
             transition: background-color 0.3s;
             text-decoration: none;
         }
+
         .chip:hover {
             background-color: #d5d5d5;
         }
+
         .chip img {
             width: 20px;
             height: 20px;
             border-radius: 50%;
             margin-right: 10px;
         }
+
         .status-yellow {
             color: #FFD700;
         }
-        .blockers img {
+
+        /* .blockers img {
             width: 50px;
             height: 50px;
             margin-right: 10px;
             vertical-align: middle;
+        } */
+        .outbound-icon {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            width: 20px;
+            height: 20px;
+            background: url('https://cdn-icons-png.flaticon.com/512/7794/7794669.png') no-repeat center center;
+            background-size: contain;
+            border: none;
+            cursor: pointer;
         }
+
+
+        */
     </style>
 </head>
+
 <body>
     <div class="section">
         <h2>CRM System Upgrade Progress Summary</h2>
@@ -60,10 +90,11 @@
         <h3>Overall Status:</h3>
         <p>
             <span class="chip">
-                <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png" alt="Yellow Status">
+                <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png"
+                    alt="Yellow Status">
                 Delays
             </span>
-                - Progress is ongoing with notable challenges that are being addressed. Some delays expected.
+            - Progress is ongoing with notable challenges that are being addressed. Some delays expected.
         </p>
     </div>
 
@@ -72,14 +103,27 @@
 
         <h3>Third-Party Integration Tools Decision:</h3>
         <p class="blockers">
-            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/5deb17c6-5ea2-4b42-8b66-41bf8c103a55/314eccab-ec56-43c5-9399-f2ba8de2bcd4/Untitled.png" alt="Blocker Image">
-            This delay in decision-making on which third-party integration tools to use is impacting the progress of backend development.
+            <img src="http://127.0.0.1:8000/image/slack1.png" style="width:50%; height:50%;     border: 2px solid black;
+" alt="Blocker Image"><img src="https://cdn-icons-png.flaticon.com/512/7794/7794669.png" alt="Blocker Image"></br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkSrMj0Qq2LYMbqQw8XSbPIMjxoI8eqDplbos-_bUt4Kaaksa7mlq3syjYKJ8fwjdRXHA&usqp=CAU"
+                alt="Blocker Image">
+
+
+            This delay in decision-making on which third-party integration tools to use is impacting the progress of
+            backend development.
         </p>
 
         <h3>API Connection Challenges:</h3>
+
         <p class="blockers">
-            <img src="https://prod-files-secure.s3.us-west-2.amazonaws.com/5deb17c6-5ea2-4b42-8b66-41bf8c103a55/0b59cd93-bf01-48be-b586-5de4f688b3b4/Untitled.png" alt="Blocker Image">
-            The team has encountered technical issues with API connections, which are crucial for data integration setup.
+            <img src="http://127.0.0.1:8000/image/slack2.png" style="width:50%; height:50%;     border: 2px solid black;
+            " alt="Blocker Image"><img src="https://cdn-icons-png.flaticon.com/512/7794/7794669.png"
+                alt="Blocker Image"></br>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkSrMj0Qq2LYMbqQw8XSbPIMjxoI8eqDplbos-_bUt4Kaaksa7mlq3syjYKJ8fwjdRXHA&usqp=CAU"
+                alt="Blocker Image">
+
+            The team has encountered technical issues with API connections, which are crucial for data integration
+            setup.
         </p>
     </div>
 
@@ -89,26 +133,54 @@
         <h3>1. Backend Development:</h3>
         <p><strong>Status:</strong>
             <span class="chip">
-                <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png" alt="Yellow Status">
+                <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png"
+                    alt="Yellow Status">
                 Delays
-            </span></p>
-        <p><strong>Details:</strong> The backend development is on track for the September 20 deadline. The team is focusing on other aspects while awaiting the decision on third-party integration tools.</p>
+            </span>
+        </p>
+        <p><strong>Details:</strong> The backend development is on track for the September 20 deadline. The team is
+            focusing on other aspects while awaiting the decision on third-party integration tools.</p>
 
         <h3>2. Data Integration Setup:</h3>
         <p><strong>Status:</strong>
             <span class="chip">
-                <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png" alt="Yellow Status">
-                Delays
-            </span>In Progress</p>
-        <p><strong>Details:</strong> The team is facing challenges with API connections. Additional resources may be required to troubleshoot and resolve these issues.</p>
+                <img src="https://em-content.zobj.net/source/apple/285/large-green-circle_1f7e2.png"
+                    alt="Yellow Status">
+                In Progress
+            </span>
+        </p>
+        <p><strong>Details:</strong> The team is facing challenges with API connections. Additional resources may be
+            required to troubleshoot and resolve these issues.</p>
 
         <h3>3. Interface Redesign:</h3>
         <p><strong>Status:</strong>
             <span class="chip">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDrws49U36I-VydAhNcmMK0dfqWq4BXvLpig&s" alt="Yellow Status">
+                <img src="https://www.emoji.co.uk/files/apple-emojis/symbols-ios/957-large-blue-circle.png"
+                    alt="Yellow Status">
                 Completed
-            </span> </p>
-        <p><strong>Details:</strong> The final designs have been completed and sent for review. The UX team is ready to incorporate any feedback received.</p>
+            </span>
+        </p>
+        <p><strong>Details:</strong> The final designs have been completed and sent for review. The UX team is ready to
+            incorporate any feedback received.</p>
+    </div>
+
+
+    <div class="section">
+
+        <h2>Recommended Actions</h2>
+        <span class="chip">
+            <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png"
+                alt="Yellow Status">
+            Message Jake
+        </span> <span class="chip">
+            <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png"
+                alt="Yellow Status">
+            Add Calendar Reminder
+        </span><span class="chip">
+            <img src="https://emojipedia-us.s3.amazonaws.com/source/skype/289/large-yellow-circle_1f7e1.png"
+                alt="Yellow Status">
+            Create Task for Jake </span>
     </div>
 </body>
+
 </html>
