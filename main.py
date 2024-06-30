@@ -1,4 +1,5 @@
 import os
+from time import sleep
 import aiofiles
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import StreamingResponse
@@ -24,7 +25,7 @@ async def stream_markdown(filename: str):
         async with aiofiles.open(file_path, mode='r', encoding='utf-8') as file:
             while True:
                 char = await file.read(1)
-                
+                sleep(0.01)
                 if not char:
                     break
                 yield char.encode('utf-8')
